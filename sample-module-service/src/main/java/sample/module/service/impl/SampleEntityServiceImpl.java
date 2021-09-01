@@ -1,6 +1,5 @@
 package sample.module.service.impl;
 
-import com.liferay.portal.aop.AopService;
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.security.permission.ActionKeys;
 import com.liferay.portal.kernel.security.permission.resource.ModelResourcePermission;
@@ -12,16 +11,12 @@ import com.liferay.portal.kernel.util.OrderByComparator;
 
 import java.util.List;
 
-import org.osgi.service.component.annotations.Component;
-
 import sample.module.constants.SampleModuleActionKeys;
 import sample.module.constants.SampleModuleConstants;
 import sample.module.model.SampleEntity;
 import sample.module.service.base.SampleEntityServiceBaseImpl;
 
 
-@Component(property = "model.class.name=sample.module.model.SampleEntity",
-        service = AopService.class)
 public class SampleEntityServiceImpl extends SampleEntityServiceBaseImpl {
     
     private static volatile ModelResourcePermission<SampleEntity> sampleEntityModelResourcePermission =

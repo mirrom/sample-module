@@ -1,6 +1,5 @@
 package sample.module.service.impl;
 
-import com.liferay.portal.aop.AopService;
 import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.model.ResourceConstants;
 import com.liferay.portal.kernel.model.User;
@@ -12,14 +11,10 @@ import com.liferay.portal.kernel.util.OrderByComparator;
 import java.util.Date;
 import java.util.List;
 
-import org.osgi.service.component.annotations.Component;
-
 import sample.module.model.SampleEntity;
 import sample.module.service.base.SampleEntityLocalServiceBaseImpl;
 
 
-@Component(property = "model.class.name=sample.module.model.SampleEntity",
-        service = AopService.class)
 public class SampleEntityLocalServiceImpl extends SampleEntityLocalServiceBaseImpl {
     
     @Indexable(type = IndexableType.REINDEX)
