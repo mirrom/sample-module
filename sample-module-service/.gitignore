@@ -1,0 +1,14 @@
+/bin/
+/build/
+/src/main/java/**/model/*
+!/src/main/java/**/model/impl/
+/src/main/java/**/model/impl/*BaseImpl.java
+/src/main/java/**/model/impl/*CacheModel.java
+/src/main/java/**/model/impl/*ModelImpl.java
+/src/main/java/**/service/*
+!/src/main/java/**/service/impl/
+!/src/main/java/**/service/util/
+/src/main/java/**/service/util/ServiceProps.java
+/src/main/resources/META-INF/*
+!/src/main/resources/META-INF/portlet-model-hints.xml
+/src/main/resources/service.properties

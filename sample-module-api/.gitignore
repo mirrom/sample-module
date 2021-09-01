@@ -1,0 +1,5 @@
+/bin/
+/build/
+/src/main/java/**/exception/*
+/src/main/java/**/model/*
+/src/main/java/**/service/*

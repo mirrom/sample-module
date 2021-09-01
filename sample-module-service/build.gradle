@@ -1,0 +1,12 @@
+dependencies {
+	compileOnly group: 'com.liferay.portal', name: 'release.dxp.api'
+	
+	compileOnly project(':modules:sample-module:sample-module-api')
+}
+
+buildService {
+	apiDir = '../sample-module-api/src/main/java'
+	databaseNameMaxLength = 64
+}
+
+group = 'sample.module'

@@ -1,0 +1,6 @@
+Bundle-Name: Sample Module Web
+Bundle-SymbolicName: sample.module.web
+Bundle-Version: 1.0.0
+Web-ContextPath: /sample-module-web
+-sources: true
+-metatype: *
