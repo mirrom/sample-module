@@ -20,7 +20,7 @@ import sample.module.model.SampleEntity;
 import sample.module.service.base.SampleEntityServiceBaseImpl;
 
 
-@Component(property = "model.class.name=sample.module.model.SampleEntity",
+@Component(property = { "json.web.service.context.name=samplemodule", "json.web.service.context.path=SampleEntity" },
         service = AopService.class)
 public class SampleEntityServiceImpl extends SampleEntityServiceBaseImpl {
     
